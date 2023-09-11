@@ -1,7 +1,14 @@
 import React, { useRef, useEffect, useState } from 'react';
-import mapboxgl from 'mapbox-gl';
+//import mapboxgl from 'mapbox-gl';
+//import ReactMapGL from "react-map-gl";
+import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
 import './Map.css';
-import axios from 'axios';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+
+// import {
+//     MapChipPrimitive 
+//    } from './ui-components';
 
 
 mapboxgl.accessToken =
