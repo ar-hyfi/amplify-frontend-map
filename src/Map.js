@@ -26,9 +26,9 @@ mapboxgl.accessToken =
 const Map = () => {
   const mapContainerRef = useRef(null);
 
-  const [lng, setLng] = useState(-83.1784);
-  const [lat, setLat] = useState(42.3190);
-  const [zoom, setZoom] = useState(11.41);
+  const [lng, setLng] = useState(-83.2776);
+  const [lat, setLat] = useState(42.3015);
+  const [zoom, setZoom] = useState(13.67);
 
   //const [influx_data, setInfluxData] = useState([]);
 

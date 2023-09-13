@@ -13,7 +13,7 @@ import {
 } from "@aws-amplify/ui-react/internal";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function MapChipPrimitive(props) {
-  const { value = "1002", overrides: overridesProp, ...rest } = props;
+  const { value = "1030", overrides: overridesProp, ...rest } = props;
   const variants = [
     {
       overrides: { Value: {}, MapChipPrimitive: {} },

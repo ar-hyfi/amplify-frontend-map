@@ -1,18 +1,21 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Map from './Map';
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+} from "@aws-amplify/ui-react";
 
-function App() {
+function App({ signOut }) {
 
   return (
     <div>
       <Map />
-      {/* <div>
-        <h1>COVID-19</h1>
-        <h2>Global</h2>
-        <h3>New Confirmed: {data.Global.NewConfirmed}</h3>
-      </div> */}
+      <div style={{ position: 'absolute', top: 20, right: 75 }}>
+        <Button onClick={signOut} style={{ backgroundColor: 'white', padding: '10px 20px', borderRadius: '5px' }}>Sign Out</Button>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
